@@ -42,77 +42,97 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="One"
         android:ems="10"
         android:layout_below="@+id/textView2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="23dp"
-        android:id="@+id/editText2" />
+        android:id="@+id/editText2"
+        tools:text="one" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Two"
         android:ems="10"
         android:layout_below="@+id/editText2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/editText3" />
+        android:id="@+id/editText3"
+        tools:text="two" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Three"
         android:ems="10"
         android:layout_below="@+id/editText3"
         android:layout_alignLeft="@+id/editText3"
         android:layout_alignStart="@+id/editText3"
-        android:id="@+id/editText4" />
+        android:id="@+id/editText4"
+        tools:text="three" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Four"
         android:ems="10"
         android:layout_below="@+id/editText4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/editText5" />
+        android:id="@+id/editText5"
+        tools:text="four" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Five"
         android:ems="10"
         android:layout_below="@+id/editText5"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/editText6" />
+        android:id="@+id/editText6"
+        tools:text="five" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Six"
         android:ems="10"
         android:layout_below="@+id/editText6"
         android:layout_alignLeft="@+id/editText6"
         android:layout_alignStart="@+id/editText6"
-        android:id="@+id/editText7" />
+        android:id="@+id/editText7"
+        tools:text="six" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Seven"
         android:ems="10"
         android:layout_below="@+id/editText7"
         android:layout_alignLeft="@+id/editText7"
         android:layout_alignStart="@+id/editText7"
-        android:id="@+id/editText8" />
+        android:id="@+id/editText8"
+        tools:text="seven" />
+
+    <Button
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText8"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginTop="31dp"
+        android:id="@+id/clear" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_alignBaseline="@+id/clear"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 </RelativeLayout>
