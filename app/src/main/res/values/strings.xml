@@ -21,4 +21,6 @@
     <string name="correct">All the words are correct, Congratulations!!</string>
     <string name="incorrect">Some of the words are incorrect,try again!!</string>
     <string name="play_again">Play again</string>
+    <string name="label_correct">Correct!!</string>
+    <string name="label_incorrect">Incorrect</string>
  </resources>

@@ -48,6 +48,7 @@ public class StartScreen extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
+                //cheat to load new source word
                 finish();
                 startActivity(getIntent());
 
@@ -114,7 +115,8 @@ public class StartScreen extends AppCompatActivity
         startActivity(myIntent);
     }
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.start_screen, menu);
         return true;

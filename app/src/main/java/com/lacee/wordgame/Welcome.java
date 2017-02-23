@@ -17,11 +17,11 @@ public class Welcome extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_screen);
         Button play = (Button)findViewById(R.id.button1);
-        play.setOnClickListener(new View.OnClickListener() {
+        play.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {
-
                 //// TODO: 26/01/2017 start Start Screen Activity
                 Intent i = new Intent(Welcome.this,StartScreen.class);
                 startActivity(i);

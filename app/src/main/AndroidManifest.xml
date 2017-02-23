@@ -9,7 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Welcome"
+        <activity
+            android:name=".Welcome"
             android:label="@string/welcome_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,14 +19,20 @@
         </activity>
         <activity
             android:name=".StartScreen"
-            android:label="@string/start_sceen"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/start_sceen">
 
         </activity>
         <activity
             android:name=".Process"
-            android:label="@string/activity_process"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/activity_process">
+        </activity>
+        <activity
+            android:name=".Correct"
+            android:label="@string/label_correct">
+        </activity>
+        <activity
+            android:name=".Incorrect"
+            android:label="@string/label_incorrect">
         </activity>
     </application>
 
