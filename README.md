@@ -1,10 +1,41 @@
-# WordGame
-Version 1
-----------------------------------------------------------
-The starts screen is working now.
-The current version of the the start screen sets 7 words for the functions to test them.
-Also displays the source word correctly. The clear button will clear all the input later when process.java is working correctly.
-Toasts are not working on the process screen i think i need a layout for it.
-The check against dictionary method is somewhat working doesn’t return the correct result, i put hello in the file.
-The next method checkforcharacters is breaking.
---------------------------------------------------------
+# Wordgame for Android #
+***Requires version 4.0 [ICS]***
+
+----------
+#### Table of Contents ####
+
+1. [Description](#description)
+2. [Status](#status)
+	- [Working](#working)
+	- [Development](#development)
+	- [Bugs](#bugs)
+	- [TODO](#todo)
+
+## Description ##
+Small android game
+
+## Development Status ##
+#### Working ####
+----------
+- Welcome screen activity
+- Start screen activity
+- Game logic 
+- Game result in `TOAST`
+
+#### In Development ####
+----------
+- Process screen activity
+- Result screen activity
+	- Correct screen activity
+	- Incorrect screen activity- 
+
+#### Bugs ####
+----------
+- Clear defaults inputs to `hello`
+
+#### TODO ####
+----------
+- App logo
+- Custom action buttons
+- Screen naming consistency
+
