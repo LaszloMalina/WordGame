@@ -19,8 +19,10 @@ Small android game
 ----------
 - Welcome screen activity
 - Start screen activity
+- Correct activity
+- Incorrect actiivty
 - Game logic 
-- Game result in `TOAST`
+- Game results displayed in end activity's
 
 #### In Development ####
 ----------
@@ -38,4 +40,7 @@ Small android game
 - App logo
 - Custom action buttons
 - Screen naming consistency
+- Check input legth(3+ more)
+- Extra activity to show the incorrect words
+- Add clear button proper function
 
