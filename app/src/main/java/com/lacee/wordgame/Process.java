@@ -61,25 +61,34 @@ public class Process extends AppCompatActivity {
             while (allOK && finalResult.size() <= 6);// this way if you come across a mistake, loop ends and code moves onto ELSE case of next IF
             if (allOK) {
                 //call activity that show all words valid message
+                /*
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_LONG;
                 String msg = "All words are valid! Well done";
 
                 Toast toast = Toast.makeText(context, msg, duration);
-                toast.show();
+                toast.show();*/
+
+                Intent c = new Intent(Process.this,Correct.class);
+                startActivity(c);
+                finish();
             } else {
                 //call activity that will show some words were invalid message
+                /*
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_LONG;
                 String msg = "Some words are invalid! Not good, try again";
 
                 Toast toast = Toast.makeText(context, msg, duration);
-                toast.show();
+                toast.show();*/
+                Intent iC = new Intent(Process.this,Incorrect.class);
+                startActivity(iC);
+                finish();
             }
         }
 
     }
-
+    //check if the word is valid
     public ArrayList<String> checkIfWordIsValid(ArrayList<String> words, String source) {
         ArrayList<String> result = new ArrayList<String>();
         //check for words duplicates
@@ -132,9 +141,6 @@ public class Process extends AppCompatActivity {
                 } catch (IOException error) {
                     //TODO ERROR HANDLING
                     //display error
-                    //toast breaks activity during debug
-                    //Toast toastTwo = Toast.makeText(context,"Error",Toast.LENGTH_SHORT);
-                    //toastTwo.show();
                 }
             } else {
                 for (String word : words) {
@@ -151,8 +157,9 @@ public class Process extends AppCompatActivity {
         }
         return result;
     }
-
-    public boolean checkLetters(String word, String source) {
+    //check the source word letters agains the current word
+    public boolean checkLetters(String word, String source)
+    {
         char[] wordLetters = word.toCharArray();
         char[] sourceLetters = source.toCharArray();
         Arrays.sort(wordLetters);
@@ -160,7 +167,8 @@ public class Process extends AppCompatActivity {
         String sortedWord = new String(wordLetters);
         String sortedSource = new String(sourceLetters);
         int i = 0;
-        while (sortedWord.length() != 0 && i < sortedSource.length()) {
+        while (sortedWord.length() != 0 && i < sortedSource.length())
+        {
             if (sortedWord.charAt(0) == sortedSource.charAt(i)) {
                 sortedWord = sortedWord.substring(1);
                 sortedSource = sortedSource.substring(0, i) + sortedSource.substring(i + 1);
