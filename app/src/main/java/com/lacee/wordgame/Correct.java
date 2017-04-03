@@ -20,6 +20,8 @@ public class Correct extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_correct);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
 
         Button play = (Button)findViewById(R.id.button);
 

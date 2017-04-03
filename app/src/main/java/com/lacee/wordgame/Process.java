@@ -36,6 +36,7 @@ public class Process extends AppCompatActivity {
         String valid = "Valid";
         boolean allOK = true;
         ArrayList<String> finalResult;
+
         if (inputtedWords.contains("")) {
             String error = "Guess words list is empty!";
             Context context = getApplicationContext();
@@ -72,6 +73,7 @@ public class Process extends AppCompatActivity {
                 Intent c = new Intent(Process.this,Correct.class);
                 startActivity(c);
                 finish();
+
             } else {
                 //call activity that will show some words were invalid message
                 /*
@@ -93,12 +95,17 @@ public class Process extends AppCompatActivity {
         ArrayList<String> result = new ArrayList<String>();
         //check for words duplicates
         boolean duplicates = false;
-        for (int j = 0; j < words.size(); j++) {
-            for (int k = j + 1; k < words.size(); k++) {
-                if (k != j && words.get(k).equals(words.get(j))) {
+        for (int j = 0; j < words.size(); j++)
+        {
+            for (int k = j + 1; k < words.size(); k++)
+            {
+                if (k != j && words.get(k).equals(words.get(j)))
+                {
                     duplicates = true;
                     result.add("Duplicate");
-                } else {
+                }
+                else
+                {
                     result.add("Valid");
                 }
             }
@@ -109,7 +116,11 @@ public class Process extends AppCompatActivity {
             int duration = Toast.LENGTH_LONG;
 
             Toast toast = Toast.makeText(context, error, duration);
-            toast.show();
+            //toast.show();
+            Intent dup = new Intent(Process.this,Duplicate.class);
+            startActivity(dup);
+            finish();
+
         } else { //no duplicates
             result.clear();
             boolean l = true;

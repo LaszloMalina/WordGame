@@ -20,7 +20,9 @@
     <string name="clear">Clear</string>
     <string name="correct">All the words are correct, Congratulations!!</string>
     <string name="incorrect">Some of the words are incorrect,try again!!</string>
+    <string name="duplicates">You entered one or more duplicate words!!</string>
     <string name="play_again">Play again</string>
-    <string name="label_correct">Correct!!</string>
-    <string name="label_incorrect">Incorrect</string>
+    <string name="label_correct">All Words Correct!!</string>
+    <string name="label_incorrect">Incorrect Words</string>
+    <string name="label_duplicate">Duplicate words</string>
  </resources>

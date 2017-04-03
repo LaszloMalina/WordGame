@@ -13,13 +13,13 @@ import android.widget.Button;
  * Created by lacee on 23/02/2017.
  */
 
-public class Incorrect extends AppCompatActivity
+public class Duplicate extends AppCompatActivity
 {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_incorrect);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
+        setContentView(R.layout.activity_duplicates);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar5);
         setSupportActionBar(toolbar);
         Button play = (Button)findViewById(R.id.button);
         play.setOnClickListener(new View.OnClickListener()
@@ -27,7 +27,7 @@ public class Incorrect extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent i = new Intent(Incorrect.this,Welcome.class);
+                Intent i = new Intent(Duplicate.this,Welcome.class);
                 startActivity(i);
                 finish();
             }

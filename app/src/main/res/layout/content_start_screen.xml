@@ -19,8 +19,6 @@
         android:text="Source Word: "
         android:textStyle="normal|bold"
         tools:textSize="18sp"
-        android:layout_alignBaseline="@+id/editText"
-        android:layout_alignBottom="@+id/editText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/textView" />

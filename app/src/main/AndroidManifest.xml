@@ -34,6 +34,10 @@
             android:name=".Incorrect"
             android:label="@string/label_incorrect">
         </activity>
+        <activity
+            android:name=".Duplicate"
+            android:label="@string/label_duplicate">
+        </activity>
     </application>
 
 </manifest>

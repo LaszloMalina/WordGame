@@ -30,6 +30,7 @@ public class StartScreen extends AppCompatActivity
 {
     String sourceWord= "";
     ArrayList<String> guessWords = new ArrayList<>();
+    ArrayList<String> tempWords = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -49,6 +50,7 @@ public class StartScreen extends AppCompatActivity
             public void onClick(View view)
             {
                 //cheat to load new source word
+                //wont be in the full app
                 finish();
                 startActivity(getIntent());
 
@@ -75,10 +77,29 @@ public class StartScreen extends AppCompatActivity
                 for(int id : ids)
                 {
                     EditText t = (EditText) findViewById(id);
-                    guessWords.add(t.getText().toString());
-                }
+                    String temp = t.getText().toString();
 
-                callProcess(guessWords,sourceWord);
+                    //checking inputs to make sure they are 3+ chars
+                    if(temp.length() >= 3)
+                    {
+                        guessWords.add(temp);
+                    }
+                    else
+                    {   //tempWords to help check for input size
+                        tempWords.add(temp);
+                    }
+                }
+                if(guessWords.size() < 6)
+                {
+                    //display toast for setting/later clearing words
+                    Context context = getApplicationContext();
+                    Toast toast = Toast.makeText(context,"3 or more chars per word, please!",Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+                else
+                {
+                    callProcess(guessWords,sourceWord);
+                }
             }
         });
         //on clear button clear the vaules of the text fields
@@ -90,11 +111,11 @@ public class StartScreen extends AppCompatActivity
                     for(int id : ids)
                     {
                         EditText t = (EditText) findViewById(id);
-                        t.setText("hello");
+                        t.setText("");
                     }
-                //display toest for setting/later clearing words
+                //display toast for setting/later clearing words
                 Context context = getApplicationContext();
-                Toast toast = Toast.makeText(context,"Words set",Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(context,"Words Cleared",Toast.LENGTH_SHORT);
                 toast.show();
 
             }
@@ -113,6 +134,7 @@ public class StartScreen extends AppCompatActivity
         myIntent.putExtra("valueList",array);
         myIntent.putExtra("sourceWord",string);
         startActivity(myIntent);
+        finish();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
