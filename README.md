@@ -20,27 +20,27 @@ Small android game
 - Welcome screen activity
 - Start screen activity
 - Correct activity
-- Incorrect actiivty
+- Incorrect activity
+- Duplicate activity
 - Game logic 
-- Game results displayed in end activity's
+- Game results displayed in activities rather than toasts
 
 #### In Development ####
 ----------
 - Process screen activity
 - Result screen activity
 	- Correct screen activity
-	- Incorrect screen activity- 
+	- Incorrect screen activity
+	- Duplicate screen activity
 
 #### Bugs ####
 ----------
-- Clear defaults inputs to `hello`
+- finish command, does not close full app on result screens
 
 #### TODO ####
 ----------
 - App logo
 - Custom action buttons
 - Screen naming consistency
-- Check input legth(3+ more)
 - Extra activity to show the incorrect words
-- Add clear button proper function
 
