@@ -23,7 +23,8 @@ Small android game
 - Incorrect activity
 - Duplicate activity
 - Game logic 
-- Game results displayed in activities rather than toasts
+- Game results displayed in end activities
+- Function added to exit the application in one click
 
 #### In Development ####
 ----------
@@ -35,7 +36,7 @@ Small android game
 
 #### Bugs ####
 ----------
-- finish command, does not close full app on result screens
+- If some correct words are put in first, still correct result screen shows
 
 #### TODO ####
 ----------
