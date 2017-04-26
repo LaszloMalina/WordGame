@@ -36,7 +36,7 @@ Small android game
 
 #### Bugs ####
 ----------
-- If some correct words are put in first, still correct result screen shows
+- If some correct words are put in first and then duplicates, still correct result screen shows
 
 #### TODO ####
 ----------
